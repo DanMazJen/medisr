@@ -12,6 +12,7 @@ This package provides tools we use for the course Medical Statistics.
 Useful links:
 \itemize{
   \item \url{https://github.com/DanMazJen/medisr}
+  \item \url{https://danmazjen.github.io/medisr/}
   \item Report bugs at \url{https://github.com/DanMazJen/medisr/issues}
 }
 

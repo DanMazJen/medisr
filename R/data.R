@@ -83,3 +83,29 @@
 #' Data file:
 #' https://zenodo.org/records/8292712/files/SUA_CVDs_risk_factors.csv
 "SUA_data"
+
+
+#' Howell !Kung Demography Data
+#'
+#' Demographic data from Kalahari !Kung San people collected by Nancy Howell.
+#'
+#' @format ## `height_data`
+#' A data frame containing demographic measurements of !Kung San individuals:
+#' \describe{
+#'   \item{height}{Height in cm}
+#'   \item{weight}{Weight in kg}
+#'   \item{age}{Age in years}
+#'   \item{male}{Gender indicator}
+#'   \item{age.at.death}{Age at death in years, if deceased}
+#'   \item{alive}{Indicator of whether the individual is still alive}
+#' }
+#'
+#' @source
+#' Downloaded from the University of Toronto TSpace repository:
+#' <https://tspace.library.utoronto.ca/handle/1807/10395>
+#'
+#' @references
+#' Howell, N. Demographic data from the Kalahari !Kung San people.
+#'
+#' @name height_data
+"height_data"

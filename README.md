@@ -1,38 +1,31 @@
-TODO: Add more to the title of your project here
 
-# medisr:
+# medisr
 
-TODO: Give a brief description of what your project is about
+<!-- badges: start -->
+<!-- badges: end -->
 
-This project...
+The goal of medisr is to provide tools we will be using throughout the course
+Medical Statistics.
 
-# Brief description of folder and file contents
+## Installation
 
-TODO: As project evolves, add brief description of what is inside the
-data, docs and R folders.
+You can install the development version of medisr like so:
 
-The following folders contain:
-
--   `data/`:
--   `docs/`:
--   `R/`:
-
-# Installing project R package dependencies
-
-If dependencies have been managed by using
-`usethis::use_package("packagename")` through the `DESCRIPTION` file,
-installing dependencies is as easy as opening the
-`medisr.Rproj` file and running this command in the console:
-
-```         
-# install.packages("pak")
-pak::pak()
+``` r
+pak::pak(danmazjen/medisr)
 ```
 
-You'll need to have remotes installed for this to work.
+## Example
 
-# Resource
+This is a basic example which shows you how to solve a common problem:
 
-For more information on this folder and file workflow and setup, check
-out the [prodigenr](https://rostools.github.io/prodigenr) online
-documentation.
+``` r
+library(medisr)
+data(hd_data)
+install_medisr_packages()
+
+hd_data |>
+    ggplot(ggplot2::aes(Age, MaxHR)) +
+    geom_point() +
+    geom_smooth(method = "lm")
+```

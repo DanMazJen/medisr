@@ -1,5 +1,13 @@
 Package: medisr
-Title: Analysis Project for medisr
-Type: Project
-Version: 0.0.1
+Title: Toolbox for Medical Statistics in R
+Version: 0.0.0.9000
+Authors@R (parsed): 
+    * Daniel Mazhari-Jensen <daskmaje@hst.aau.dk> [aut, cre]
+Description: This package serves as a toolbox for the course Medical Statistics.
+License: MIT + file LICENSE
 Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
+Depends: 
+    R (>= 3.5)
+LazyData: true

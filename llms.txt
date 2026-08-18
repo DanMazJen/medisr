@@ -1,0 +1,41 @@
+# medisr
+
+The goal of medisr is to provide tools we will be using throughout the
+course Medical Statistics.
+
+## Installation
+
+You can install the development version of medisr like so:
+
+``` r
+
+pak::pak(danmazjen/medisr)
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+
+library(medisr)
+data(hd_data)
+install_medisr_packages()
+
+hd_data |>
+    ggplot(ggplot2::aes(Age, MaxHR)) +
+    geom_point() +
+    geom_smooth(method = "lm")
+```
+
+# Package index
+
+## All functions
+
+- [`SUA_data`](https://danmazjen.github.io/medisr/reference/SUA_data.md)
+  : Serum Uric Acid and Cardiovascular Disease Risk Factors
+- [`hd_data`](https://danmazjen.github.io/medisr/reference/hd_data.md) :
+  Cleveland Heart Disease
+- [`height_data`](https://danmazjen.github.io/medisr/reference/height_data.md)
+  : Howell !Kung Demography Data
+

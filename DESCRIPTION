@@ -11,3 +11,5 @@ RoxygenNote: 8.0.0
 Depends: 
     R (>= 3.5)
 LazyData: true
+URL: https://github.com/DanMazJen/medisr
+BugReports: https://github.com/DanMazJen/medisr/issues

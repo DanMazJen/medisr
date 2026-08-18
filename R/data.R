@@ -4,7 +4,7 @@
 #' outcome variable indicates whether angiographically confirmed heart
 #' disease is present.
 #'
-#' @format ## `cleveland`
+#' @format ## `hd_data`
 #' A data frame with 303 rows and 14 columns:
 #' \describe{
 #'   \item{HD}{Heart Disease Status. Confirmed coronary artery disease based
@@ -52,7 +52,7 @@
 #' examinations were enrolled.
 #'
 #' @format ## `SUA_data`
-#' A data frame with 6,119 rows and 14 columns:
+#' A data frame with 6,119 rows and 15 columns:
 #' \describe{
 #'   \item{ID}{Unique identifier for each participant}
 #'   \item{Age}{Age of the participant in years}
@@ -74,7 +74,7 @@
 #' @source Luo, Y., Wu, Q., Meng, R., Lian, F., Jiang, C., Hu, M., Wang, Y.,
 #' & Ma, H. (2023). Associations of serum uric acid with cardiovascular
 #' disease risk factors: a retrospective cohort study in Southeastern China
-#' [Data set]. Zenodo.
+#' Data set. Zenodo.
 #' https://doi.org/10.5061/dryad.z08kprrk1
 #'
 #' Zenodo record:

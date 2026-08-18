@@ -2,6 +2,7 @@
 # medisr
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/DanMazJen/medisr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/DanMazJen/medisr/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of medisr is to provide tools we will be using throughout the course

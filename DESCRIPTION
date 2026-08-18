@@ -1,8 +1,10 @@
+Type:Package
 Package: medisr
 Title: Toolbox for Medical Statistics in R
 Version: 0.0.0.9000
-Authors@R (parsed): 
-    * Daniel Mazhari-Jensen <daskmaje@hst.aau.dk> [aut, cre]
+Authors@R: c( 
+    person("Daniel", "Mazhari-Jensen", , "daskmaje@hst.aau.dk", role = c("aut", "cre"))
+    )
 Description: This package serves as a toolbox for the course Medical Statistics.
 License: MIT + file LICENSE
 Encoding: UTF-8

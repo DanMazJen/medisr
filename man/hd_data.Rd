@@ -5,7 +5,7 @@
 \alias{hd_data}
 \title{Cleveland Heart Disease}
 \format{
-\subsection{\code{cleveland}}{
+\subsection{\code{hd_data}}{
 
 A data frame with 303 rows and 14 columns:
 \describe{

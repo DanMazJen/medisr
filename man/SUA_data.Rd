@@ -7,7 +7,7 @@
 \format{
 \subsection{\code{SUA_data}}{
 
-A data frame with 6,119 rows and 14 columns:
+A data frame with 6,119 rows and 15 columns:
 \describe{
 \item{ID}{Unique identifier for each participant}
 \item{Age}{Age of the participant in years}
@@ -31,7 +31,7 @@ A data frame with 6,119 rows and 14 columns:
 Luo, Y., Wu, Q., Meng, R., Lian, F., Jiang, C., Hu, M., Wang, Y.,
 & Ma, H. (2023). Associations of serum uric acid with cardiovascular
 disease risk factors: a retrospective cohort study in Southeastern China
-\link{Data set}. Zenodo.
+Data set. Zenodo.
 https://doi.org/10.5061/dryad.z08kprrk1
 
 Zenodo record:

@@ -1,7 +1,11 @@
-# medisr
+# medisr — Medical Statistics using R
+
+> A companion toolbox for the educational purpose of learning and
+> teaching medical statistics using R.
 
 The goal of medisr is to provide tools we will be using throughout the
-course Medical Statistics.
+course [Medical
+Statistics](https://danmazjen.github.io/medicinsk-statistik/).
 
 ## Installation
 
@@ -9,18 +13,20 @@ You can install the development version of medisr like so:
 
 ``` r
 
-pak::pak(danmazjen/medisr)
+install.package("pak")
+pak::pak("danmazjen/medisr")
 ```
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
+## Example usage
 
 ``` r
 
 library(medisr)
-data(hd_data)
-install_medisr_packages()
+medisr_install_packages() # install all required packages
+
+data(hd_data) # fetches data
+
+library(ggplot2)
 
 hd_data |>
     ggplot(ggplot2::aes(Age, MaxHR)) +

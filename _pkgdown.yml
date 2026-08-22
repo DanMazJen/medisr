@@ -1,4 +1,132 @@
 url: https://danmazjen.github.io/medisr/
+
+home:
+  title: medisr — Medical Statistics using R
+  description: >
+    A companion toolbox for the educational purpose of learning/teaching medical statistics using R.
+
 template:
   bootstrap: 5
+  math-rendering: mathjax
+  light-switch: true
 
+  bslib:
+    primary: "#176B87"
+    secondary: "#64B5C6"
+    success: "#198754"
+    info: "#3A86A8"
+    warning: "#E9A23B"
+    danger: "#C94C4C"
+
+    bg: "#FFFFFF"
+    fg: "#243746"
+
+    border-radius: 0.65rem
+    btn-border-radius: 0.4rem
+    code-bg: "#F3F7F9"
+
+  includes:
+    in_header: |
+      <meta name="theme-color" content="#176B87">
+
+development:
+  mode: auto
+
+navbar:
+  structure:
+    left:
+      - home
+#      - intro
+      - reference
+#      - articles
+#      - tutorials
+    right:
+      - search
+      - github
+      - lightswitch
+
+#  components:
+#    intro:
+#      text: Getting started
+#      href: articles/medisr.html
+
+#    tutorials:
+#      text: Tutorials
+#      menu:
+#      - text: "Introduction to medisr"
+#        href: articles/medisr.html
+#      - text: "Medical data with R"
+#        href: articles/medical-data.html
+#      - text: "Pharmaceutical applications"
+#        href: articles/pharmaceutical.html
+#      - text: "Industrial applications"
+#        href: articles/industrial.html
+
+    github:
+      icon: fab fa-github
+      href: https://github.com/danmazjen/medisr
+      aria-label: GitHub
+
+
+#reference:
+#  - title: Learn medisr
+#
+#  - subtitle: Getting started
+#    desc: >
+#      Functions and tools designed to introduce medical and pharmaceutical
+#      applications of R.
+#    contents:
+#      - starts_with("medisr_")#
+#
+#  - title: Medical applications
+#    desc: >
+#      Tools for working with data and concepts encountered in medicine.
+#    contents:
+#      - has_concept("medicine")
+#
+#  - title: Pharmaceutical applications
+#    desc: >
+#      Functions for pharmaceutical science and drug-development workflows.
+#    contents:
+#      - has_concept("pharmaceutical")
+#
+#  - title: Industrial applications
+#    desc: >
+#      Tools and examples for applying R in pharmaceutical and medical
+#      industry settings.
+#    contents:
+#      - has_concept("industrial")
+#
+#  - title: Data and analysis
+#    contents:
+#      - has_concept("data")
+#      - has_concept("analysis")
+#      - has_concept("visualization")
+#
+#articles:
+#  - title: Learn medisr
+#    navbar: Learn
+#    contents:
+#      - medisr
+#
+#  - title: Applications
+#    navbar: Applications
+#    contents:
+#      - medical-data
+#      - pharmaceutical
+#      - industrial
+#
+#  - title: Advanced topics
+#    navbar: Advanced
+#    contents:
+#      - advanced
+#
+#news:
+#  releases:
+#    - text: "Development version"
+#      href: https://github.com/danmazjen/medisr
+
+footer:
+  structure:
+    left: developed_by
+    right: built_with

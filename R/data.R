@@ -109,3 +109,85 @@
 #'
 #' @name height_data
 "height_data"
+
+
+#' Alzheimer's Disease
+#'
+#' Clinical, demographic, and cerebrospinal fluid (CSF) measurements from
+#' subjects participating in a clinical study investigating whether
+#' biological measurements in CSF can be used to diagnose or predict
+#' Alzheimer's disease.
+#'
+#' @format ## `ad_data`
+#' A list containing:
+#' \describe{
+#'   \item{diagnosis}{An R factor vector containing the Alzheimer's disease
+#'   diagnosis for 333 subjects.}
+#'   \item{predictors}{A data frame containing demographic and laboratory
+#'   measurements for the study subjects, including the `Genotype` variable.}
+#' }
+#'
+#' The `Genotype` predictor records the subject's Apolipoprotein E (APOE)
+#' genotype. APOE has three variants (E2, E3, and E4), with six possible
+#' genotype combinations formed by inheriting one variant from each parent.
+#' APOE genotype is associated with Alzheimer's disease risk.
+#'
+#' These data are a modified version of the values used in the original
+#' publication.
+#'
+#' @source Craig-Schapiro, R., Kuhn, M., Xiong, C., Pickering, E. H., Liu, J.,
+#' Misko, T. P., Perrin, R. J., et al. (2011). Multiplexed Immunoassay Panel
+#' Identifies Novel CSF Biomarkers for Alzheimer's Disease Diagnosis and
+#' Prognosis. *PLoS ONE*, 6(4), e18850.
+"ad_data"
+
+
+
+#' Alzheimer's Disease Logistic Regression Predictions
+#'
+#' Predicted Alzheimer's disease probabilities and observed diagnoses from a
+#' logistic regression model fitted to a training subset of the `ad_data`
+#' dataset. The model uses age, sex, cerebrospinal fluid (CSF) tau and
+#' phosphorylated tau concentrations, amyloid beta 42 concentration, and
+#' Apolipoprotein E (APOE) genotype as predictors.
+#'
+#' The original `ad_data` observations were split by alternating rows, with
+#' even-numbered observations used for model training and odd-numbered
+#' observations used for validation. The logistic regression model was fitted
+#' to the training observations, and predicted probabilities were generated
+#' for the validation observations.
+#'
+#' @format ## `ad_validation_logistic`
+#' A data frame containing one row for each observation in the validation
+#' subset, with 3 columns:
+#' \describe{
+#'   \item{.pred_impaired}{Predicted probability that the subject is
+#'   cognitively impaired.}
+#'   \item{.pred_control}{Predicted probability that the subject is a
+#'   cognitive control.}
+#'   \item{Class}{Observed diagnosis of the subject, with levels
+#'   `impaired` and `control`.}
+#' }
+#'
+#' The probabilities are generated from the logistic regression model:
+#' \preformatted{
+#' diagnosis ~ age + male + tau + p_tau + Ab_42 + Genotype
+#' }
+#'
+#' Predictor variables include:
+#' \describe{
+#'   \item{age}{Normalized patient age.}
+#'   \item{male}{Indicator of reported male sex.}
+#'   \item{tau}{Concentration of total tau protein in cerebrospinal fluid (CSF),
+#'   measured by lumbar puncture.}
+#'   \item{p_tau}{Concentration of phosphorylated tau protein in CSF, measured
+#'   by lumbar puncture.}
+#'   \item{Ab_42}{Concentration of amyloid beta 42 (Aβ42) in CSF. Aβ42 is a
+#'   42-amino-acid peptide derived from amyloid precursor protein and is a
+#'   component of the amyloid plaques associated with Alzheimer's disease.}
+#'   \item{Genotype}{APOE allele pair. Possible values are `E2E2`, `E2E3`,
+#'   `E3E3`, `E3E4`, `E2E4`, and `E4E4`.}
+#' }
+#'
+#' @seealso [ad_data]
+"ad_validation_logistic"

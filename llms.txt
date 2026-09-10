@@ -1,7 +1,5 @@
 # medisr — Medical Statistics using R
 
-## medisr [![medisr website](reference/figures/logo.png)](https://danmazjen.github.io/medisr/)
-
 > A companion toolbox for the educational purpose of learning and
 > teaching medical statistics using R.
 

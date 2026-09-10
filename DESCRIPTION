@@ -18,3 +18,7 @@ BugReports: https://github.com/DanMazJen/medisr/issues
 Suggests: 
     devtools,
     usethis
+Imports: 
+    cli,
+    fs,
+    withr

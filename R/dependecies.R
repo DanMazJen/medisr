@@ -21,7 +21,8 @@ medisr_install_packages <- function() {
       "marginaleffects",
       "shiny",
       "survminer",
-      "tinytable"
+      "tinytable",
+      "prodigenr"
     ),
     repos = "https://cloud.r-project.org"
   )

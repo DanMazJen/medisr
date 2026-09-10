@@ -12,5 +12,7 @@
   Cleveland Heart Disease
 - [`height_data`](https://danmazjen.github.io/medisr/reference/height_data.md)
   : Howell !Kung Demography Data
+- [`medisr_init_project()`](https://danmazjen.github.io/medisr/reference/medisr_init_project.md)
+  : Initialize a Medisr R project
 - [`medisr_install_packages()`](https://danmazjen.github.io/medisr/reference/medisr_install_packages.md)
   : Install all packages used for the Medical Statistics course

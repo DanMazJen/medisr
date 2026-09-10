@@ -18,3 +18,6 @@ final_logo <- hexSticker::sticker(my_logo, package="medisr", p_size=30,
         filename="medisr_icon_2.png",h_fill="#062047",h_color = "#062047")
 
 plot(final_logo)
+
+# 1) usethis::use_logo
+# 2) pkgdown::build_favicons(pkg = ".", overwrite = TRUE)

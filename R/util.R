@@ -26,6 +26,8 @@
 #'
 #' @return Invisibly returns the absolute path to the initialized project
 #' directory.
+#' 
+#' @export
 #'
 #' @examples
 #' \dontrun{

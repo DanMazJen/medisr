@@ -22,7 +22,11 @@ pak::pak("danmazjen/medisr")
 library(medisr)
 medisr_install_packages() # install all required packages
 
-data(hd_data) # fetches data
+medisr_init_project() # initialise a standardized project structure
+
+data(hd_data) # fetches a dataset exploring heart disease
+
+# Now you can start exploring using R: 
 
 library(ggplot2)
 

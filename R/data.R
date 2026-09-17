@@ -191,3 +191,57 @@
 #'
 #' @seealso [ad_data]
 "ad_validation_logistic"
+
+
+#' British Doctors Study Smoking Data
+#'
+#' Data from the famous British Doctors Study of smoking conducted by
+#' Sir Richard Doll, Austin Bradford Hill, and colleagues. The study
+#' investigated the relationship between smoking and mortality among
+#' British doctors and became one of the landmark studies in the history
+#' of epidemiology.
+#'
+#' @format ## `doctors`
+#' A tibble containing aggregated mortality data from the British Doctors Study:
+#' \describe{
+#'   \item{age}{Age group: 1 = 35 to 44 years, 2 = 45 to 54 years,
+#'   3 = 55 to 64 years, 4 = 65 to 74 years, 5 = 75 to 84 years}
+#'   \item{agesq}{Age group squared}
+#'   \item{smoking}{Smoking status: smoker or non-smoker}
+#'   \item{deaths}{Number of deaths}
+#'   \item{personyears}{Person-years of observation at the time of the analysis}
+#' }
+#'
+#' @details
+#' The British Doctors Study was initiated in 1951 by Richard Doll and
+#' Austin Bradford Hill to investigate the relationship between smoking
+#' and mortality. Questionnaires concerning smoking habits were sent to
+#' British doctors, who were subsequently followed over many years.
+#'
+#' The study provided important prospective evidence concerning the
+#' association between cigarette smoking and mortality, particularly
+#' from lung cancer. Its findings played a major role in the development
+#' of modern epidemiology and in the scientific debate over the causal
+#' effects of smoking.
+#'
+#' The data in this dataset are aggregated by age group and smoking
+#' status. The `personyears` variable records the amount of observation
+#' contributed by each group and can be used as an exposure term in
+#' analyses of mortality rates, such as Poisson regression.
+#'
+#' @source
+#' Breslow, N. E. and N. E. Day (1987). Statistical Methods in Cancer
+#' Research, Volume 2: The Design and Analysis of Cohort Studies.
+#' Lyon: International Agency for Research on Cancer.
+#'
+#' @references
+#' Doll, R. and Hill, A. B. (1954). The mortality of doctors in relation
+#' to their smoking habits: A preliminary report. *British Medical Journal*,
+#' 1(4877), 1451-1455.
+#'
+#' Breslow, N. E. and Day, N. E. (1987). *Statistical Methods in Cancer
+#' Research, Volume 2: The Design and Analysis of Cohort Studies*.
+#' Lyon: International Agency for Research on Cancer.
+#'
+#' @name doctors
+"doctors"

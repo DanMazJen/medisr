@@ -48,6 +48,8 @@ hd_data |>
   Alzheimer's Disease
 - [`ad_validation_logistic`](https://danmazjen.github.io/medisr/reference/ad_validation_logistic.md)
   : Alzheimer's Disease Logistic Regression Predictions
+- [`doctors`](https://danmazjen.github.io/medisr/reference/doctors.md) :
+  British Doctors Study Smoking Data
 - [`hd_data`](https://danmazjen.github.io/medisr/reference/hd_data.md) :
   Cleveland Heart Disease
 - [`height_data`](https://danmazjen.github.io/medisr/reference/height_data.md)

@@ -8,6 +8,8 @@
   Alzheimer's Disease
 - [`ad_validation_logistic`](https://danmazjen.github.io/medisr/reference/ad_validation_logistic.md)
   : Alzheimer's Disease Logistic Regression Predictions
+- [`beetle_dose`](https://danmazjen.github.io/medisr/reference/beetle_dose.md)
+  : Bliss (1935) Beetle Mortality Data
 - [`doctors`](https://danmazjen.github.io/medisr/reference/doctors.md) :
   British Doctors Study Smoking Data
 - [`hd_data`](https://danmazjen.github.io/medisr/reference/hd_data.md) :

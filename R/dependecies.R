@@ -22,7 +22,12 @@ medisr_install_packages <- function() {
       "shiny",
       "survminer",
       "tinytable",
-      "prodigenr"
+      "prodigenr",
+      "sandwich",
+      "car",
+      "here",
+      "MASS",
+      "pak"
     ),
     repos = "https://cloud.r-project.org"
   )

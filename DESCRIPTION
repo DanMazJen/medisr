@@ -3,7 +3,8 @@ Package: medisr
 Title: Toolbox for Medical Statistics in R
 Version: 0.0.0.9000
 Authors@R: c( 
-    person("Daniel", "Mazhari-Jensen", , "daskmaje@hst.aau.dk", role = c("aut", "cre"))
+    person("Daniel", "Mazhari-Jensen", "Skak", "daskmaje@hst.aau.dk", role = c("aut", "cre")),
+    person("Jan", "Valentin", "Brink", "jvalentin@dcm.aau.dk", role = c("aut"))
     )
 Description: This package serves as a toolbox for the course Medical Statistics.
 License: MIT + file LICENSE

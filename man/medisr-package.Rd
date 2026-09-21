@@ -18,11 +18,12 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Daniel Mazhari-Jensen \email{daskmaje@hst.aau.dk}
+\strong{Maintainer}: Daniel Skak Mazhari-Jensen \email{daskmaje@hst.aau.dk}
 
 Authors:
 \itemize{
-  \item Daniel Mazhari-Jensen \email{daskmaje@hst.aau.dk}
+  \item Daniel Skak Mazhari-Jensen \email{daskmaje@hst.aau.dk}
+  \item Jan Brink Valentin \email{jvalentin@dcm.aau.dk}
 }
 
 }

@@ -280,3 +280,277 @@
 #' Pregibon, D. (1980). Goodness of link tests for generalized linear models.
 #' Journal of the Royal Statistical Society: Series C, 29, 15--23.
 "beetle_dose"
+
+
+#' Synthetic Danish National Health Survey Data
+#'
+#' Synthetic health survey data reconstructed from clustered and summarized
+#' data based on the Danish National Health Survey (Den Nationale
+#' Sundhedsprofil, DNS). The data preserve core patterns and correlations
+#' observed in the source data while not containing the original individual-
+#' level observations.
+#'
+#' @format ## dns
+#' A tibble containing synthetic health survey data:
+#' \describe{
+#' \item{sex}{Sex: 1 = Male, 0 = Female}
+#' \item{height}{Height in cm}
+#' \item{weight}{Weight in kg}
+#' \item{age}{Age in years}
+#' \item{pcs}{Physical health rating derived from the 12-Item Short Form
+#' Survey (SF-12), with higher values representing better physical
+#' health}
+#' \item{mcs}{Mental health rating derived from the 12-Item Short Form
+#' Survey (SF-12), with higher values representing better mental
+#' well-being}
+#' \item{alcoholweek}{Number of alcohol units consumed per week, where one
+#' unit corresponds to 15 ml of alcohol}
+#' }
+#'
+#' @details
+#' The Danish National Health Survey is a large population-based survey
+#' concerning health, morbidity, and health-related behavior among the
+#' Danish population.
+#'
+#' The data in this dataset are synthetic. A random subset of survey
+#' subjects from the source data was summarized into clusters while
+#' preserving core patterns and correlations among the variables. The
+#' synthetic observations were subsequently simulated from these clusters.
+#' Consequently, the dataset is intended for statistical analysis,
+#' teaching, and methodological demonstrations rather than as a replacement
+#' for the original survey data.
+#'
+#' The pcs and mcs variables are derived from the physical and mental
+#' component scores of the 12-Item Short Form Survey (SF-12), respectively.
+#' Higher values indicate better health on the corresponding scale.
+#'
+#' @source
+#' Danish National Health Survey (Den Nationale Sundhedsprofil).
+#' Statens Institut for Folkesundhed, University of Southern Denmark.
+#' \url{https://www.sdu.dk/da/sif/rapporter/2022/den_nationale_sundhedsprofil}
+#'
+#' @references
+#' Jensen, H. A. R., Davidsen, M., Ekholm, O., and Christensen, A. I. (2022).
+#' Danskernes sundhed: Den Nationale Sundhedsprofil 2021. Statens Institut
+#' for Folkesundhed, Syddansk Universitet.
+#'
+#' @name dns
+"dns"
+
+#' James Lind Scurvy Trial Data
+#'
+#' Reconstructed data from the journals of James Lind describing his
+#' 1747 investigation of treatments for scurvy among sailors aboard
+#' HMS Salisbury. The data record the treatments administered to individual
+#' sailors, their vitamin C exposure, treatment duration, and outcomes.
+#'
+#' @format ## james_lind
+#' A data frame containing reconstructed observations from James Lind's
+#' scurvy trial:
+#' \describe{
+#' \item{Sailor_ID}{Identifier for the sailor}
+#' \item{Group}{Treatment group}
+#' \item{Treatment}{Description of the treatment administered}
+#' \item{Vitamin_C}{Daily vitamin C intake in mg}
+#' \item{Total_Vitamin_C}{Total vitamin C intake during the treatment period,
+#' in mg}
+#' \item{Duration}{Treatment duration in days}
+#' \item{Outcome_text}{Text description of the treatment outcome}
+#' \item{Outcome}{Numeric outcome value}
+#' \item{Diet}{Diet during the treatment period}
+#' }
+#'
+#' @details
+#' In 1747, James Lind conducted a controlled trial aboard HMS Salisbury
+#' to investigate treatments for scurvy. Twelve sailors suffering from
+#' scurvy were divided into pairs and given different dietary and medicinal
+#' treatments for a period of two weeks. The treatments included cider,
+#' elixir vitriol, vinegar, seawater, nutmeg, and citrus fruits.
+#'
+#' The trial is widely recognized as an early example of a controlled
+#' clinical experiment and is frequently used in discussions of the
+#' development of clinical trial methodology and evidence-based medicine.
+#'
+#' The data in this dataset are reconstructed from Lind's journals and
+#' historical accounts of the trial. They are intended for statistical
+#' analysis, teaching, and methodological demonstrations. The reconstructed
+#' data should not be interpreted as a verbatim transcription of the
+#' original historical records.
+#'
+#' @source
+#' Lind, J. (1753). A Treatise of the Scurvy. Edinburgh: Sands, Murray
+#' and Cochran.
+#'
+#' @references
+#' Lind, J. (1753). A Treatise of the Scurvy. Edinburgh: Sands, Murray
+#' and Cochran.
+#'
+#' @name james_lind
+"james_lind"
+
+#' Synthetic Thrombectomy Data
+#'
+#' Synthetic data reconstructed from clustered and summarized data from the
+#' Danish Stroke Register (DanStroke) and the Danish National Patient
+#' Registry. The source data contain patients with acute ischemic stroke
+#' who were eligible for thrombectomy in Denmark between 2011 and 2016.
+#'
+#' @format ## thrombectomy
+#' A tibble containing synthetic data on patients with acute ischemic stroke:
+#' \describe{
+#' \item{cost}{Hospital-associated costs in euros during the first year
+#' following stroke}
+#' \item{LoS}{Length of hospital stay in days following stroke}
+#' \item{mRS_3month}{Modified Rankin Scale (mRS) score three months after
+#' stroke: 0 = no symptoms; 1 = no significant disability; 2 = slight
+#' disability; 3 = moderate disability; 4 = moderately severe disability;
+#' 5 = severe disability; 6 = dead}
+#' \item{age_at_diagnosis}{Age in years at the time of stroke}
+#' \item{year}{Year of stroke}
+#' \item{time_to_death}{Time to death or censoring, in days}
+#' \item{death}{Death during follow-up: 1 = yes, 0 = no}
+#' \item{sex}{Sex: 1 = Male, 0 = Female}
+#' \item{prior_diabetes}{Diabetes prior to stroke: 1 = yes, 0 = no}
+#' \item{prior_hypertention}{Hypertension prior to stroke: 1 = yes, 0 = no}
+#' \item{thrombectomy}{Thrombectomy received: 1 = yes, 0 = no}
+#' }
+#'
+#' @details
+#' The source population consists of patients with acute ischemic stroke
+#' in Denmark who were eligible for thrombectomy between 2011 and 2016.
+#' Eligibility in the source data was restricted to patients older than
+#' 18 years of age with a National Institutes of Health Stroke Scale (NIHSS)
+#' score above 15.
+#'
+#' The Modified Rankin Scale (mRS) is a commonly used measure of functional
+#' disability following stroke. Scores range from 0 (no symptoms) to
+#' 6 (death), with higher scores indicating greater disability.
+#'
+#' The data in this dataset are synthetic. A random subset of observations
+#' from the source data was summarized into clusters while preserving core
+#' patterns and correlations among the variables. The synthetic observations
+#' were subsequently simulated from these clusters. The data are intended
+#' for statistical analysis, teaching, and methodological demonstrations
+#' and should not be interpreted as original patient-level registry data.
+#'
+#' @source
+#' Danish Stroke Register (DanStroke), Danish Clinical Quality Program.
+#' \url{https://www.sundk.dk/kliniske-kvalitetsdatabaser/dansk-stroke-register/om-databasen/}
+#'
+#' Danish National Patient Registry.
+#'
+#' @references
+#' Danish Stroke Register (Dansk Stroke Register, DanStroke). Danish
+#' Clinical Quality Program.
+#'
+#' @name thrombectomy
+"thrombectomy"
+
+
+#' Synthetic Hamilton D17 Depression Data
+#'
+#' Synthetic data reconstructed from clustered and summarized data from the
+#' Danish Depression Database (Dansk Depressionsdatabase, DDD). The source
+#' data contain patients admitted to psychiatric hospitals with depression
+#' in Denmark between 2011 and 2022.
+#'
+#' @format ## hamilton_d17
+#' A tibble containing synthetic data on patients admitted with depression:
+#' \describe{
+#' \item{Sex}{Sex: 1 = Male, 0 = Female}
+#' \item{readmitted90days}{Readmitted within 90 days after discharge:
+#' 1 = yes, 0 = no}
+#' \item{age_at_admission}{Age in years at admission}
+#' \item{admission_duration_days}{Duration of psychiatric admission in days}
+#' \item{HAMD17_t0}{Hamilton Depression Rating Scale (HAM-D17) score at
+#' admission}
+#' \item{HAMD17_t1}{Hamilton Depression Rating Scale (HAM-D17) score at
+#' discharge}
+#' \item{HAMD17_diff}{Difference in Hamilton Depression Rating Scale
+#' (HAM-D17) score between admission and discharge}
+#' }
+#'
+#' @details
+#' The Hamilton Depression Rating Scale (HAM-D17) is a clinician-administered
+#' instrument used to assess the severity of depressive symptoms. In this
+#' dataset, the scale is recorded at admission and discharge, allowing the
+#' change in depressive symptom severity during the psychiatric admission
+#' to be examined.
+#'
+#' The data in this dataset are synthetic. A random subset of observations
+#' from the source data was summarized into clusters while preserving core
+#' patterns and correlations among the variables. The synthetic observations
+#' were subsequently simulated from these clusters. The data are intended
+#' for statistical analysis, teaching, and methodological demonstrations
+#' and should not be interpreted as original patient-level registry data.
+#'
+#' @source
+#' Danish Depression Database (Dansk Depressionsdatabase, DDD).
+#' Danish Clinical Quality Program.
+#' \url{https://www.sundk.dk/kliniske-kvalitetsdatabaser/dansk-depressionsdatabase-ddd/om-databasen/}
+#'
+#' @name hamilton_d17
+"hamilton_d17"
+
+
+
+#' Blood Pressure During Thrombectomy and Functional Outcomes
+#'
+#' Data on blood pressure during thrombectomy and functional outcomes at
+#' three months following treatment for acute ischemic stroke. The dataset
+#' was compiled from four clinical trials and contains a subset of the
+#' variables available in the original studies.
+#'
+#' @format ## mabp
+#' A tibble containing data on patients undergoing thrombectomy for acute
+#' ischemic stroke:
+#' \describe{
+#' \item{sex}{Sex: 1 = Female, 0 = Male}
+#' \item{age}{Age in years at admission}
+#' \item{SBP_baseline}{Systolic blood pressure in mmHg at baseline}
+#' \item{MAP_baseline}{Mean arterial blood pressure in mmHg at baseline}
+#' \item{nihss_adm}{National Institutes of Health Stroke Scale (NIHSS)
+#' score at admission: 0 = no stroke, 1--4 = minor stroke, 5--15 =
+#' moderate stroke, 16--20 = moderate to severe stroke, 21--42 =
+#' severe stroke}
+#' \item{Hyperton}{Hypertension: 1 = yes, 0 = no}
+#' \item{Diabetes}{Diabetes: 1 = yes, 0 = no}
+#' \item{mrs_3m}{Modified Rankin Scale (mRS) score at three months:
+#' 0 = no symptoms; 1 = no significant disability; 2 = slight disability;
+#' 3 = moderate disability; 4 = moderately severe disability;
+#' 5 = severe disability; 6 = dead}
+#' \item{sbp_[min]}{Systolic blood pressure in mmHg at [min] minutes after
+#' groin puncture}
+#' \item{map_[min]}{Mean arterial blood pressure in mmHg at [min] minutes
+#' after groin puncture}
+#' }
+#'
+#' @details
+#' The dataset concerns blood pressure measurements during thrombectomy
+#' and functional outcomes three months after treatment. The National
+#' Institutes of Health Stroke Scale (NIHSS) is used to quantify the
+#' severity of neurological impairment following stroke, while the
+#' Modified Rankin Scale (mRS) is used to assess functional disability
+#' after stroke.
+#'
+#' The data were compiled from four distinct clinical trials. Only a subset
+#' of the variables from the original studies is included. Blood pressure
+#' measurements have been truncated and time-averaged, and noise has been
+#' added to the measurements. Consequently, the data do not represent the
+#' original trial observations and are intended for statistical analysis,
+#' teaching, and methodological demonstrations.
+#'
+#' @source
+#' Espelund, M., et al. (2023).
+#'
+#' Rasmussen, M., et al. (2021).
+#'
+#' @references
+#' Espelund, M., et al. (2023).
+#'
+#' Rasmussen, M., et al. (2021).
+#'
+#' @name mabp
+"mabp"
+
+

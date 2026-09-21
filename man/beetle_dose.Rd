@@ -9,8 +9,8 @@
 
 A data frame with 8 rows and 3 columns:
 \describe{
-\item{dose}{Numeric dose of gaseous carbon disulphide, expressed as
-log10-transformed dose}
+\item{dose}{Numeric dose of gaseous carbon disulphide (CS₂), expressed as
+log10-transformed CS₂ mg/L}
 \item{died}{Integer number of adult flour beetles killed after five hours
 of exposure}
 \item{n}{Integer total number of adult flour beetles exposed}

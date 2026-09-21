@@ -20,8 +20,8 @@ A data frame with 8 rows and 3 columns:
 
 - dose:
 
-  Numeric dose of gaseous carbon disulphide, expressed as
-  log10-transformed dose
+  Numeric dose of gaseous carbon disulphide (CS₂), expressed as
+  log10-transformed CS₂ mg/L
 
 - died:
 

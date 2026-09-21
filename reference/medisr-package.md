@@ -14,8 +14,10 @@ Useful links:
 
 ## Author
 
-**Maintainer**: Daniel Mazhari-Jensen <daskmaje@hst.aau.dk>
+**Maintainer**: Daniel Skak Mazhari-Jensen <daskmaje@hst.aau.dk>
 
 Authors:
 
-- Daniel Mazhari-Jensen <daskmaje@hst.aau.dk>
+- Daniel Skak Mazhari-Jensen <daskmaje@hst.aau.dk>
+
+- Jan Brink Valentin <jvalentin@dcm.aau.dk>

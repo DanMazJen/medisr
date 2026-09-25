@@ -561,7 +561,7 @@
 #' following pulmonary embolism.
 #'
 #' @format
-#' The eq5d dataset contains two data frames, eq5d_train and eq5d_test,
+#' The `eq5d` dataset contains two data frames, `eq5d_train` and `eq5d_test`,
 #' which can be loaded together using data(eq5d).
 #'
 #' Both data frames contain the following variables:
@@ -576,7 +576,7 @@
 #' \item{sex}{Sex (0 = Female, 1 = Male).}
 #' }
 #'
-#' eq5d_train is the training set and eq5d_test is the test set. The data
+#' `eq5d_train` is the training set and `eq5d_test` is the test set. The data
 #' are split by time.
 #'
 #' The dataset is a subset of the variables from the original study data.
@@ -595,19 +595,8 @@
 #' Danish electronic version of the PEmb-QoL questionnaire. BMJ Open, 15,
 #' e103473. doi:10.1136/bmjopen-2025-103473
 #'
-#' @references
-#' Rolving, N., Lindegaard, S. F., Johnsen, S. P., et al. (2024).
-#' Effectiveness and cost-effectiveness of a structured integrated
-#' post-pulmonary embolism follow-up care model (Attend-PE): a rationale and
-#' protocol for a multicentre clinical pre-post study. BMJ Open, 14,
-#' e088533. doi:10.1136/bmjopen-2024-088533
-#'
-#' Lindegaard, S. F., Valentin, J. B., Rolving, N., et al. (2025).
-#' Quality of life after pulmonary embolism: psychometric validation of the
-#' Danish electronic version of the PEmb-QoL questionnaire. BMJ Open, 15,
-#' e103473. doi:10.1136/bmjopen-2025-103473
-#'
 #' @name eq5d
+#' @aliases eq5d_train eq5d_test
 NULL
 
 
@@ -617,8 +606,8 @@ NULL
 #'
 #' @format
 #' The prostate_cancer dataset contains two data frames,
-#' prostate_cancer_train and prostate_cancer_test, which can be loaded
-#' together using data(prostate_cancer).
+#' `prostate_cancer_train` and `prostate_cancer_test`, which can be loaded
+#' together using `data(prostate_cancer)`.
 #'
 #' Both data frames contain the following variables:
 #' \describe{
@@ -627,10 +616,10 @@ NULL
 #' \item{symptomatic}{Indicator of whether the patient has trouble urinating
 #' and/or decreased force of urine stream.}
 #' \item{biomarkerk}{Concentration of an unspecified biomarker extracted
-#' from a blood sample, where k denotes the biomarker number.}
+#' from a blood sample, where k denotes the biomarker number 1-12.}
 #' }
 #'
-#' prostate_cancer_train is the training set and prostate_cancer_test is
+#' `prostate_cancer_train` is the training set and `prostate_cancer_test` is
 #' the test set.
 #'
 #' @details
@@ -667,4 +656,77 @@ NULL
 #' JAMA Ophthalmology, 131(3), 351--357.
 #'
 #' @name prostate_cancer
+#' @aliases prostate_cancer_train prostate_cancer_test
 NULL
+
+#' COVID-19 Data
+#'
+#' Real-world COVID-19 data for European countries.
+#'
+#' @format
+#' A data frame containing population characteristics, COVID-19 cases and
+#' deaths, and other country- and week-specific variables:
+#' \describe{
+#' \item{country}{Country.}
+#' \item{alpha2code}{Two-digit country code.}
+#' \item{totalpop}{Total population (country-specific variable).}
+#' \item{population_density}{Population density (country-specific variable).}
+#' \item{human_development_index}{Human development index (country-specific
+#' variable).}
+#' \item{male_smokers}{Proportion of male smokers (country-specific
+#' variable).}
+#' \item{female_smokers}{Proportion of female smokers (country-specific
+#' variable).}
+#' \item{diabetes_prevalence}{Diabetes prevalence (country-specific
+#' variable).}
+#' \item{gdp_per_capita}{GDP per capita (country-specific variable).}
+#' \item{aged_70_older}{Proportion of people aged 70 years or older
+#' (country-specific variable).}
+#' \item{people_vaccinated_per_hundred}{Cumulative number of people
+#' vaccinated per hundred in the week of the baseline record.}
+#' \item{temperature}{Average temperature in the week of the baseline
+#' record.}
+#' \item{date}{Date of the Monday in the week of the baseline record.}
+#' \item{cases}{Weekly number of cases four weeks after baseline.}
+#' \item{cases_baseline}{Weekly number of cases in the baseline week.}
+#' \item{cases_w1bb}{Weekly number of cases one week before baseline.}
+#' \item{cases_w2bb}{Weekly number of cases two weeks before baseline.}
+#' \item{cases_w3bb}{Weekly number of cases three weeks before baseline.}
+#' \item{cases_w4bb}{Weekly number of cases four weeks before baseline.}
+#' \item{cases_w5bb}{Weekly number of cases five weeks before baseline.}
+#' \item{cases_w6bb}{Weekly number of cases six weeks before baseline.}
+#' \item{cases_w7bb}{Weekly number of cases seven weeks before baseline.}
+#' \item{deaths}{Weekly number of deaths four weeks after baseline.}
+#' \item{deaths_baseline}{Weekly number of deaths in the baseline week.}
+#' \item{deaths_w1bb}{Weekly number of COVID-19-related deaths one week
+#' before baseline.}
+#' \item{deaths_w2bb}{Weekly number of COVID-19-related deaths two weeks
+#' before baseline.}
+#' \item{deaths_w3bb}{Weekly number of COVID-19-related deaths three weeks
+#' before baseline.}
+#' \item{deaths_w4bb}{Weekly number of COVID-19-related deaths four weeks
+#' before baseline.}
+#' \item{deaths_w5bb}{Weekly number of COVID-19-related deaths five weeks
+#' before baseline.}
+#' \item{deaths_w6bb}{Weekly number of COVID-19-related deaths six weeks
+#' before baseline.}
+#' \item{deaths_w7bb}{Weekly number of COVID-19-related deaths seven weeks
+#' before baseline.}
+#' }
+#'
+#' @details
+#' The population consists of the populations of most European countries.
+#' Country-specific variables are combined with weekly COVID-19 data to
+#' describe the epidemiological situation around a baseline week.
+#'
+#' @source
+#' CIESIN (2018). Gridded Population of the World, Version 4 (GPWv4):
+#' Basic Characteristics, Revision 11. Palisades, NY: NASA Socioeconomic
+#' Data and Applications Center (SEDAC), Columbia University Center for
+#' International Earth Science Information Network (CIESIN).
+#'
+#' ECDC (2021). COVID-19 Situation Update Worldwide, as of Week 13,
+#' Updated 8 April 2021. European Centre for Disease Prevention and Control.
+#'
+#' @name covid_data
+"covid_data"

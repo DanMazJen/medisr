@@ -2,9 +2,11 @@
 % Please edit documentation in R/data.R
 \name{eq5d}
 \alias{eq5d}
+\alias{eq5d_train}
+\alias{eq5d_test}
 \title{EQ-5D-5L and PEmb-QoL Data}
 \format{
-The eq5d dataset contains two data frames, eq5d_train and eq5d_test,
+The \code{eq5d} dataset contains two data frames, \code{eq5d_train} and \code{eq5d_test},
 which can be loaded together using data(eq5d).
 
 Both data frames contain the following variables:
@@ -19,7 +21,7 @@ reduced to a summary score of 9 items.}
 \item{sex}{Sex (0 = Female, 1 = Male).}
 }
 
-eq5d_train is the training set and eq5d_test is the test set. The data
+\code{eq5d_train} is the training set and \code{eq5d_test} is the test set. The data
 are split by time.
 
 The dataset is a subset of the variables from the original study data.
@@ -42,16 +44,4 @@ e103473. doi:10.1136/bmjopen-2025-103473
 Data for predicting quality of life measured by the EQ-5D-5L summary score
 from selected demographic and PEmb-QoL questionnaire variables in patients
 following pulmonary embolism.
-}
-\references{
-Rolving, N., Lindegaard, S. F., Johnsen, S. P., et al. (2024).
-Effectiveness and cost-effectiveness of a structured integrated
-post-pulmonary embolism follow-up care model (Attend-PE): a rationale and
-protocol for a multicentre clinical pre-post study. BMJ Open, 14,
-e088533. doi:10.1136/bmjopen-2024-088533
-
-Lindegaard, S. F., Valentin, J. B., Rolving, N., et al. (2025).
-Quality of life after pulmonary embolism: psychometric validation of the
-Danish electronic version of the PEmb-QoL questionnaire. BMJ Open, 15,
-e103473. doi:10.1136/bmjopen-2025-103473
 }

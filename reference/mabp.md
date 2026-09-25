@@ -55,17 +55,13 @@ ischemic stroke:
   disability; 4 = moderately severe disability; 5 = severe disability; 6
   = dead
 
-- sbp\_[min](https://rdrr.io/r/base/Extremes.html):
+- sbp_t:
 
-  Systolic blood pressure in mmHg at
-  [min](https://rdrr.io/r/base/Extremes.html) minutes after groin
-  puncture
+  Systolic blood pressure in mmHg at t minutes after groin puncture
 
-- map\_[min](https://rdrr.io/r/base/Extremes.html):
+- map_t:
 
-  Mean arterial blood pressure in mmHg at
-  [min](https://rdrr.io/r/base/Extremes.html) minutes after groin
-  puncture
+  Mean arterial blood pressure in mmHg at t minutes after groin puncture
 
 ## Source
 

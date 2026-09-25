@@ -24,9 +24,9 @@ severe stroke}
 0 = no symptoms; 1 = no significant disability; 2 = slight disability;
 3 = moderate disability; 4 = moderately severe disability;
 5 = severe disability; 6 = dead}
-\item{sbp_\link{min}}{Systolic blood pressure in mmHg at \link{min} minutes after
+\item{sbp_t}{Systolic blood pressure in mmHg at t minutes after
 groin puncture}
-\item{map_\link{min}}{Mean arterial blood pressure in mmHg at \link{min} minutes
+\item{map_t}{Mean arterial blood pressure in mmHg at t minutes
 after groin puncture}
 }
 }

@@ -377,10 +377,6 @@
 #' data should not be interpreted as a verbatim transcription of the
 #' original historical records.
 #'
-#' @source
-#' Lind, J. (1753). A Treatise of the Scurvy. Edinburgh: Sands, Murray
-#' and Cochran.
-#'
 #' @references
 #' Lind, J. (1753). A Treatise of the Scurvy. Edinburgh: Sands, Murray
 #' and Cochran.
@@ -438,10 +434,6 @@
 #' \url{https://www.sundk.dk/kliniske-kvalitetsdatabaser/dansk-stroke-register/om-databasen/}
 #'
 #' Danish National Patient Registry.
-#'
-#' @references
-#' Danish Stroke Register (Dansk Stroke Register, DanStroke). Danish
-#' Clinical Quality Program.
 #'
 #' @name thrombectomy
 "thrombectomy"
@@ -540,18 +532,20 @@
 #' original trial observations and are intended for statistical analysis,
 #' teaching, and methodological demonstrations.
 #'
-#' @source
-#' Espelund, M., et al. (2023).
-#'
-#' Rasmussen, M., et al. (2021).
-#'
 #' @references
-#' Espelund, M., et al. (2023).
-#'
-#' Rasmussen, M., et al. (2021).
+#' Rasmussen M, Schönenberger S, Hendèn PL, et al. Blood Pressure Thresholds and
+#' Neurologic Outcomes After Endovascular Therapy for Acute Ischemic Stroke: An
+#' Analysis of Individual Patient Data From 3 Randomized Clinical Trials. JAMA
+#' Neurol. 2020;77(5):622--631. doi:10.1001/jamaneurol.2019.4838 
+#' 
+#' Espelund US, Valentin JB, Eriksen CF, et al. Standard versus individualized blood pressure
+#' targets during thrombectomy: a randomized controlled pilot trial. Stroke:
+#' Vascular Interventional Neurol 2023; 3: e001027.
 #'
 #' @name mabp
 "mabp"
+
+
 
 
 #' EQ-5D-5L and PEmb-QoL Data

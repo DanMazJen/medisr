@@ -12,7 +12,7 @@ The goal of medisr is to provide tools we will be using throughout the course
 You can install the development version of medisr like so:
 
 ``` r
-install.package("pak")
+install.packages("pak")
 pak::pak("danmazjen/medisr")
 ```
 

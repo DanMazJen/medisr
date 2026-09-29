@@ -13,8 +13,8 @@ You can install the development version of medisr like so:
 
 ``` r
 
-install.package("pak")
-pak::pak("danmazjen/medisr")
+# Install 'medisr' in R:
+install.packages('medisr', repos = c('https://danmazjen.r-universe.dev', 'https://cloud.r-project.org'))
 ```
 
 ## Example usage

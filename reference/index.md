@@ -12,6 +12,11 @@
   : Bliss (1935) Beetle Mortality Data
 - [`covid_data`](https://danmazjen.github.io/medisr/reference/covid_data.md)
   : COVID-19 Data
+- [`dataset01`](https://danmazjen.github.io/medisr/reference/dataset01.md)
+  : Nedocromil Sodium for Preventing Exercise-Induced
+  Bronchoconstriction
+- [`direct`](https://danmazjen.github.io/medisr/reference/direct.md) :
+  Paroxetine versus Placebo for the Treatment of Major Depression
 - [`dns`](https://danmazjen.github.io/medisr/reference/dns.md) :
   Synthetic Danish National Health Survey Data
 - [`doctors`](https://danmazjen.github.io/medisr/reference/doctors.md) :
@@ -20,6 +25,10 @@
   [`eq5d_train`](https://danmazjen.github.io/medisr/reference/eq5d.md)
   [`eq5d_test`](https://danmazjen.github.io/medisr/reference/eq5d.md) :
   EQ-5D-5L and PEmb-QoL Data
+- [`frmgham2_CR`](https://danmazjen.github.io/medisr/reference/frmgham2_CR.md)
+  : Framingham Heart Study Cardiovascular Risk Data
+- [`frmgham2_survival`](https://danmazjen.github.io/medisr/reference/frmgham2_survival.md)
+  : Framingham Heart Study Cardiovascular Survival Data
 - [`hamilton_d17`](https://danmazjen.github.io/medisr/reference/hamilton_d17.md)
   : Synthetic Hamilton D17 Depression Data
 - [`hd_data`](https://danmazjen.github.io/medisr/reference/hd_data.md) :

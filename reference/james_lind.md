@@ -54,11 +54,6 @@ scurvy trial:
 
   Diet during the treatment period
 
-## Source
-
-Lind, J. (1753). A Treatise of the Scurvy. Edinburgh: Sands, Murray and
-Cochran.
-
 ## Details
 
 In 1747, James Lind conducted a controlled trial aboard HMS Salisbury to

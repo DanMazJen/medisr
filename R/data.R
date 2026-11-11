@@ -724,3 +724,328 @@ NULL
 #'
 #' @name covid_data
 "covid_data"
+
+
+
+#' Nedocromil Sodium for Preventing Exercise-Induced Bronchoconstriction
+#'
+#' This dataset contains summary statistics from 17 studies comparing
+#' nedocromil sodium with placebo for the prevention of exercise-induced
+#' bronchoconstriction. The outcome of interest is the maximum percentage
+#' fall in forced expiratory volume in one second (FEV1) following exercise.
+#' For each study, the sample size, mean maximum percentage fall in FEV1,
+#' and standard deviation are reported separately for the experimental
+#' (nedocromil sodium) and control (placebo) groups.
+#'
+#' The dataset is used in Chapter 1 of "Meta-Analysis with R" to illustrate
+#' the preparation, import, and analysis of continuous outcome data in
+#' meta-analysis. The treatment effect can be expressed as a mean difference
+#' between the nedocromil sodium and placebo groups.
+#'
+#' @format ## `dataset01`
+#' A data frame with 17 rows and 8 columns:
+#' \describe{
+#'   \item{author}{First author of the study}
+#'   \item{year}{Year of publication of the study}
+#'   \item{Ne}{Number of participants in the experimental
+#'     (nedocromil sodium) group}
+#'   \item{Me}{Mean maximum percentage fall in FEV1 in the
+#'     experimental (nedocromil sodium) group}
+#'   \item{Se}{Standard deviation of the maximum percentage fall
+#'     in FEV1 in the experimental (nedocromil sodium) group}
+#'   \item{Nc}{Number of participants in the control (placebo) group}
+#'   \item{Mc}{Mean maximum percentage fall in FEV1 in the
+#'     control (placebo) group}
+#'   \item{Sc}{Standard deviation of the maximum percentage fall
+#'     in FEV1 in the control (placebo) group}
+#' }
+#'
+#' @source
+#' Schwarzer, G., Carpenter, J. R., & Rücker, G. (2015).
+#' *Meta-Analysis with R*. Springer.
+#'
+#' Dataset downloaded from the Institute of Medical Biometry and Statistics,
+#' University Medical Center Freiburg:
+#' <https://www.uniklinik-freiburg.de/imbi-en/studies-and-teaching/meta-analysis-with-r/datasets.html>
+#'
+#' Direct data file:
+#' <https://www.uniklinik-freiburg.de/fileadmin/mediapool/08_institute/biometrie-statistik/Dateien/Englisch/Studies_and_Teaching/Educational_Books/Meta-Analysis_with_R/Datasets/dataset01.csv>
+#'
+#' @references
+#' Spooner, C. H., Saunders, L. D., & Rowe, B. H. (2002).
+#' Nedocromil sodium for preventing exercise-induced bronchoconstriction.
+#' *Cochrane Database of Systematic Reviews*, (1), CD001183.
+#' https://doi.org/10.1002/14651858.CD001183
+#'
+#' @name dataset01
+"dataset01"
+
+
+
+#' Framingham Heart Study Cardiovascular Survival Data
+#'
+#' This dataset contains baseline demographic characteristics, cardiovascular
+#' risk factors, medical history, and follow-up information for participants
+#' from the Framingham Heart Study. It is a subset of the Framingham
+#' longitudinal teaching dataset, restricted to baseline examination records
+#' (period 1), with additional information on the occurrence and timing of
+#' cardiovascular events and mortality.
+#'
+#' The dataset is intended for cardiovascular epidemiology and survival
+#' analysis. It includes information on coronary heart disease, myocardial
+#' infarction, stroke, cardiovascular disease, hypertension, and death,
+#' together with follow-up times for these outcomes. The `stroke_or_death`
+#' variable identifies participants who experienced either a stroke or death.
+#'
+#' @format ## `frmgham2_survival`
+#' A data frame with 4,402 rows and 40 columns:
+#' \describe{
+#'   \item{randid}{Unique identifier for each participant}
+#'   \item{sex}{Sex of the participant. 1 = male; 2 = female}
+#'   \item{totchol}{Total serum cholesterol level (mg/dL)}
+#'   \item{age}{Age of the participant at examination (years)}
+#'   \item{sysbp}{Systolic blood pressure (mmHg)}
+#'   \item{diabp}{Diastolic blood pressure (mmHg)}
+#'   \item{cursmoke}{Current cigarette smoking status. 0 = no; 1 = yes}
+#'   \item{cigpday}{Number of cigarettes smoked per day}
+#'   \item{bmi}{Body mass index (kg/m^2)}
+#'   \item{diabetes}{Diabetes status. 0 = no; 1 = yes}
+#'   \item{bpmeds}{Use of antihypertensive medication. 0 = no; 1 = yes}
+#'   \item{heartrte}{Resting ventricular heart rate (beats per minute)}
+#'   \item{glucose}{Blood glucose level (mg/dL)}
+#'   \item{educ}{Educational attainment category (1--4)}
+#'   \item{prevchd}{History of coronary heart disease at baseline.
+#'     0 = no; 1 = yes}
+#'   \item{prevap}{History of angina pectoris at baseline.
+#'     0 = no; 1 = yes}
+#'   \item{prevmi}{History of myocardial infarction at baseline.
+#'     0 = no; 1 = yes}
+#'   \item{prevstrk}{History of stroke at baseline. 0 = no; 1 = yes}
+#'   \item{prevhyp}{History of hypertension at baseline.
+#'     0 = no; 1 = yes}
+#'   \item{time}{Time since the beginning of the study (days)}
+#'   \item{period}{Examination period. 1 = baseline examination}
+#'   \item{hdlc}{High-density lipoprotein cholesterol (mg/dL)}
+#'   \item{ldlc}{Low-density lipoprotein cholesterol (mg/dL)}
+#'   \item{death}{Death during follow-up. 0 = no; 1 = yes}
+#'   \item{angina}{Occurrence of angina pectoris during follow-up.
+#'     0 = no; 1 = yes}
+#'   \item{hospmi}{Hospitalization for myocardial infarction during
+#'     follow-up. 0 = no; 1 = yes}
+#'   \item{MI_FCHD}{Occurrence of myocardial infarction or fatal coronary
+#'     heart disease during follow-up. 0 = no; 1 = yes}
+#'   \item{anychd}{Occurrence of coronary heart disease during follow-up.
+#'     0 = no; 1 = yes}
+#'   \item{stroke}{Occurrence of stroke during follow-up.
+#'     0 = no; 1 = yes}
+#'   \item{cvd}{Occurrence of cardiovascular disease during follow-up.
+#'     0 = no; 1 = yes}
+#'   \item{hyperten}{Occurrence of hypertension during follow-up.
+#'     0 = no; 1 = yes}
+#'   \item{timeap}{Time to angina pectoris or end of follow-up (days)}
+#'   \item{timemi}{Time to myocardial infarction or end of follow-up (days)}
+#'   \item{timemifc}{Time to myocardial infarction or fatal coronary
+#'     heart disease, or end of follow-up (days)}
+#'   \item{timechd}{Time to coronary heart disease or end of follow-up (days)}
+#'   \item{timestrk}{Time to stroke or end of follow-up (days)}
+#'   \item{timecvd}{Time to cardiovascular disease or end of follow-up (days)}
+#'   \item{timedth}{Time to death or end of follow-up (days)}
+#'   \item{timehyp}{Time to hypertension or end of follow-up (days)}
+#'   \item{stroke_or_death}{Composite outcome indicating whether the
+#'     participant experienced stroke or death. 0 = neither event;
+#'     1 = stroke or death}
+#' }
+#'
+#' Missing values are present for some clinical measurements, including
+#' cholesterol and glucose measurements.
+#'
+#' Follow-up times are expressed in days. For participants who did not
+#' experience the corresponding event, the follow-up time represents the
+#' available observation period and can be used as a censoring time in
+#' survival analyses.
+#'
+#' @source
+#' National Heart, Lung, and Blood Institute (NHLBI).
+#' Framingham Heart Study teaching dataset.
+#'
+#' Biologic Specimen and Data Repository Information Coordinating Center
+#' (BioLINCC):
+#' <https://biolincc.nhlbi.nih.gov/teaching/>
+#'
+#' @references
+#' Framingham Heart Study.
+#' National Heart, Lung, and Blood Institute.
+#' <https://www.framinghamheartstudy.org/>
+#'
+#' Graphics and Statistics for Cardiology: Survival Analysis.
+#' Supplementary materials, *Heart*.
+#' <https://heart.bmj.com/content/heartjnl/103/5/335/DC5>
+#'
+#' @name frmgham2_survival
+"frmgham2_survival"
+
+
+
+#' Framingham Heart Study Cardiovascular Risk Data
+#'
+#' This dataset contains demographic characteristics, cardiovascular risk
+#' factors, medical history, and cardiovascular outcomes for participants
+#' in the Framingham Heart Study. It is based on baseline examination
+#' records (period 1) and includes information on the occurrence and timing
+#' of cardiovascular events and mortality during follow-up.
+#'
+#' The dataset is suitable for studying cardiovascular risk factors and
+#' time-to-event outcomes, including coronary heart disease, myocardial
+#' infarction, stroke, cardiovascular disease, hypertension, and death.
+#' It contains baseline clinical measurements and indicators of incident
+#' events, together with corresponding follow-up times expressed in days.
+#'
+#' @format ## `frmgham2_CR`
+#' A data frame with 4,402 rows and 39 columns:
+#' \describe{
+#'   \item{randid}{Unique identifier for each participant}
+#'   \item{sex}{Sex of the participant. 1 = male; 2 = female}
+#'   \item{totchol}{Total serum cholesterol level (mg/dL)}
+#'   \item{age}{Age of the participant at examination (years)}
+#'   \item{sysbp}{Systolic blood pressure (mmHg)}
+#'   \item{diabp}{Diastolic blood pressure (mmHg)}
+#'   \item{cursmoke}{Current cigarette smoking status. 0 = no; 1 = yes}
+#'   \item{cigpday}{Number of cigarettes smoked per day}
+#'   \item{bmi}{Body mass index (kg/m^2)}
+#'   \item{diabetes}{Diabetes status. 0 = no; 1 = yes}
+#'   \item{bpmeds}{Use of antihypertensive medication. 0 = no; 1 = yes}
+#'   \item{heartrte}{Resting ventricular heart rate (beats per minute)}
+#'   \item{glucose}{Blood glucose level (mg/dL)}
+#'   \item{educ}{Educational attainment category (1--4)}
+#'   \item{prevchd}{History of coronary heart disease at baseline.
+#'     0 = no; 1 = yes}
+#'   \item{prevap}{History of angina pectoris at baseline.
+#'     0 = no; 1 = yes}
+#'   \item{prevmi}{History of myocardial infarction at baseline.
+#'     0 = no; 1 = yes}
+#'   \item{prevstrk}{History of stroke at baseline. 0 = no; 1 = yes}
+#'   \item{prevhyp}{History of hypertension at baseline.
+#'     0 = no; 1 = yes}
+#'   \item{time}{Time since the beginning of the study (days)}
+#'   \item{period}{Examination period. 1 = baseline examination}
+#'   \item{hdlc}{High-density lipoprotein cholesterol (mg/dL)}
+#'   \item{ldlc}{Low-density lipoprotein cholesterol (mg/dL)}
+#'   \item{death}{Death during follow-up. 0 = no; 1 = yes}
+#'   \item{angina}{Occurrence of angina pectoris during follow-up.
+#'     0 = no; 1 = yes}
+#'   \item{hospmi}{Hospitalization for myocardial infarction during
+#'     follow-up. 0 = no; 1 = yes}
+#'   \item{MI_FCHD}{Occurrence of myocardial infarction or fatal coronary
+#'     heart disease during follow-up. 0 = no; 1 = yes}
+#'   \item{anychd}{Occurrence of coronary heart disease during follow-up.
+#'     0 = no; 1 = yes}
+#'   \item{stroke}{Occurrence of stroke during follow-up.
+#'     0 = no; 1 = yes}
+#'   \item{cvd}{Occurrence of cardiovascular disease during follow-up.
+#'     0 = no; 1 = yes}
+#'   \item{hyperten}{Occurrence of hypertension during follow-up.
+#'     0 = no; 1 = yes}
+#'   \item{timeap}{Time to angina pectoris or end of follow-up (days)}
+#'   \item{timemi}{Time to myocardial infarction or end of follow-up (days)}
+#'   \item{timemifc}{Time to myocardial infarction or fatal coronary
+#'     heart disease, or end of follow-up (days)}
+#'   \item{timechd}{Time to coronary heart disease or end of follow-up (days)}
+#'   \item{timestrk}{Time to stroke or end of follow-up (days)}
+#'   \item{timecvd}{Time to cardiovascular disease or end of follow-up (days)}
+#'   \item{timedth}{Time to death or end of follow-up (days)}
+#'   \item{timehyp}{Time to hypertension or end of follow-up (days)}
+#' }
+#'
+#' Missing values are present for some clinical measurements, particularly
+#' high-density and low-density lipoprotein cholesterol.
+#'
+#' Follow-up times are expressed in days. For participants who did not
+#' experience the corresponding event, the follow-up time represents the
+#' available observation period and can be used as a censoring time in
+#' time-to-event analyses.
+#'
+#' @source
+#' National Heart, Lung, and Blood Institute (NHLBI).
+#' Framingham Heart Study teaching dataset.
+#'
+#' Biologic Specimen and Data Repository Information Coordinating Center
+#' (BioLINCC):
+#' <https://biolincc.nhlbi.nih.gov/teaching/>
+#'
+#' @references
+#' Framingham Heart Study.
+#' National Heart, Lung, and Blood Institute.
+#' <https://www.framinghamheartstudy.org/>
+#'
+#' @name frmgham2_CR
+"frmgham2_CR"
+
+
+
+#' Paroxetine versus Placebo for the Treatment of Major Depression
+#'
+#' This dataset contains study-level data from randomized controlled trials
+#' comparing paroxetine with placebo for the treatment of major depressive
+#' disorder. It includes the number of randomized participants and the
+#' number of treatment responders in each study arm, together with
+#' calculated measures of treatment effect.
+#'
+#' Treatment response is represented as a binary outcome. For each study,
+#' the number of responders and randomized participants is reported for
+#' the paroxetine and placebo groups. The dataset also provides the risk
+#' difference (RD), risk ratio (RR), logarithm of the risk ratio (logRR),
+#' and their corresponding standard errors.
+#'
+#' The dataset is suitable for illustrating pairwise meta-analysis of
+#' dichotomous outcomes, particularly the use of risk differences and
+#' risk ratios to compare treatment response between intervention and
+#' control groups.
+#'
+#' @format ## `direct`
+#' A data frame with 17 rows and 13 columns:
+#' \describe{
+#'   \item{ID}{Unique identifier for each study}
+#'   \item{StudyID}{Study identifier, including trial registration
+#'     numbers or other study-specific identifiers}
+#'   \item{Year_Published}{Year of publication of the study.
+#'     Unpublished studies are identified as "unpublished"}
+#'   \item{No_randomised15}{Number of participants randomized to
+#'     treatment group 15 (paroxetine)}
+#'   \item{Responders15}{Number of treatment responders in group 15
+#'     (paroxetine)}
+#'   \item{No_randomised16}{Number of participants randomized to
+#'     treatment group 16 (placebo)}
+#'   \item{Responders16}{Number of treatment responders in group 16
+#'     (placebo)}
+#'   \item{RD}{Risk difference in treatment response between the
+#'     paroxetine and placebo groups}
+#'   \item{se_RD}{Standard error of the risk difference}
+#'   \item{RR}{Risk ratio for treatment response, comparing
+#'     paroxetine with placebo}
+#'   \item{logRR}{Natural logarithm of the risk ratio}
+#'   \item{se_logRR}{Standard error of the log risk ratio}
+#'   \item{drug15_str}{Description of treatment group 15
+#'     (paroxetine)}
+#'   \item{drug16_str}{Description of treatment group 16 (placebo)}
+#' }
+#'
+#' Missing values occur for some responder counts and their corresponding
+#' effect estimates because outcome data are unavailable for certain
+#' studies.
+#'
+#' Positive risk differences and risk ratios greater than 1 indicate
+#' higher treatment response in the paroxetine group compared with
+#' placebo.
+#'
+#' @source
+#' Study-level data extracted from randomized controlled trials
+#' comparing paroxetine with placebo for major depressive disorder.
+#'
+#' @references
+#' Cipriani, A., et al. (2009). 
+#' Comparative efficacy and acceptability of 12 new-generation
+#' antidepressants: a multiple-treatments meta-analysis.
+#' *The Lancet*, 373, 746--758.
+#'
+#' @name direct
+"direct"

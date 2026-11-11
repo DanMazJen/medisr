@@ -31,11 +31,6 @@ after groin puncture}
 }
 }
 }
-\source{
-Espelund, M., et al. (2023).
-
-Rasmussen, M., et al. (2021).
-}
 \usage{
 mabp
 }
@@ -61,8 +56,13 @@ original trial observations and are intended for statistical analysis,
 teaching, and methodological demonstrations.
 }
 \references{
-Espelund, M., et al. (2023).
+Rasmussen M, Schönenberger S, Hendèn PL, et al. Blood Pressure Thresholds and
+Neurologic Outcomes After Endovascular Therapy for Acute Ischemic Stroke: An
+Analysis of Individual Patient Data From 3 Randomized Clinical Trials. JAMA
+Neurol. 2020;77(5):622--631. doi:10.1001/jamaneurol.2019.4838
 
-Rasmussen, M., et al. (2021).
+Espelund US, Valentin JB, Eriksen CF, et al. Standard versus individualized blood pressure
+targets during thrombectomy: a randomized controlled pilot trial. Stroke:
+Vascular Interventional Neurol 2023; 3: e001027.
 }
 \keyword{datasets}

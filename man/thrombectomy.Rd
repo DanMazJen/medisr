@@ -60,8 +60,4 @@ were subsequently simulated from these clusters. The data are intended
 for statistical analysis, teaching, and methodological demonstrations
 and should not be interpreted as original patient-level registry data.
 }
-\references{
-Danish Stroke Register (Dansk Stroke Register, DanStroke). Danish
-Clinical Quality Program.
-}
 \keyword{datasets}

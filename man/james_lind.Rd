@@ -23,10 +23,6 @@ in mg}
 }
 }
 }
-\source{
-Lind, J. (1753). A Treatise of the Scurvy. Edinburgh: Sands, Murray
-and Cochran.
-}
 \usage{
 james_lind
 }
